@@ -38,18 +38,19 @@ export default function Header({ showVideo, setShowVideo }: HeaderProps) {
 
           {/* Ronaldo Video */}
           <div className="relative rounded-lg overflow-hidden aspect-video">
-            <video
-              className="w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              controls={false}
-              style={{ outline: "none" }}
-            >
-              <source src="/ronaldo.mp4" type="video/mp4" />
-            </video>
+          <video
+  className="w-full h-full"
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  controls={false}
+  style={{ outline: "none", backgroundColor: "black" }}
+>
+  <source src="/ronaldo.mp4" type="video/mp4" />
+</video>
+
           </div>
         </div>
       )}
